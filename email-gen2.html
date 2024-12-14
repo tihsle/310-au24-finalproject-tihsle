@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row my-4">
+      <div class="col-12">
+        <h1>Email Generator</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="email-generator-form">
+          <div class="form-group mb-2">
+            <label for="prompt">Email Prompt:</label>
+            <textarea id="prompt" name="prompt" class="form-control" rows="5" placeholder="Enter your prompt for the email (e.g., Write an email apologizing for missing a deadline)"></textarea>
+          </div>
+          <div class="form-group mb-2">
+            <input id="submit" class="btn btn-primary" type="submit" value="Generate Email" />
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6" id="email-container">
+        <!-- Display email here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="api-key.js"></script>
+  <script src="email-gen2.js"></script>
+</body>
+</html>
